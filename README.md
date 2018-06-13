@@ -6,3 +6,13 @@ Based on the code and examples found at: https://learn.sparkfun.com/tutorials/la
 We have simply converted the example code into Squirrel, note that you will have to use a level shifter from 3.3V to 5V for this driver.
 
 We have used this Driver to create a fun Display Board in our office. We hope you will find this code useful.
+
+This class has one main function and a test function.
+
+## displayNumber(*number,numberOfDrivers*)
+
+displayNumber will send a number to the Digit Drivers dependant on the numberOfDrivers you have added into the train.
+
+# License
+
+The PN532 library is licensed under the [MIT License](./LICENSE).
