@@ -25,7 +25,7 @@ displayNumber will send a number to the Digit Drivers dependant on the numberOfD
 demoCounter will count up the digits from 0 -> (10^numberOfDrivers). The speed of the counting is also defined by the number of drivers in use.
 
 
-Simply call this function to test
+Simply call this function to test your equipment.
 
 # License
 
