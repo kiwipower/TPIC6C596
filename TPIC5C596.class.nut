@@ -75,11 +75,11 @@ class TPIC5C596 {
         latchPin.write(1);
     }
 
-    function demoCounter() {
+    function demoCounter(numberOfDrivers) {
         for ( local i = 0; ; i++  ) {
-            digit.displayNumber(i);
-            imp.sleep(0.5);
-            if ( i == 1000 ) {
+            digit.displayNumber(i,numberOfDrivers);
+            imp.sleep(1/numberOfDrivers);
+            if ( i == math.pow(10,numberOfDrivers) ) {
                 i = -1;
             }
         }
