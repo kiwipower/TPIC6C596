@@ -1,5 +1,5 @@
 /**
- *  Program to update 3 digit LED, Only integer number are currently
+ *  Program to update 3 digit LED, Only integer numbers are currently
  *  supported.
  *
  */
