@@ -29,9 +29,6 @@ lookup[7] <- (a | b | c);
 lookup[8] <- (a | b | c | d | e | f | g);
 lookup[9] <- (a | b | c | d | f | g);
 
-// Number of digits
-const numberOfDigit = 3;
-
 class TPIC5C596 {
     dataPin = null;
     clockPin = null;
@@ -63,10 +60,10 @@ class TPIC5C596 {
     }
 
 //display number as 3 digit decimal value
-    function displayNumber(number) {
+    function displayNumber(number,numberOfDrivers) {
         local remainder;
 
-        for (local i = 0 ; i < numberOfDigit ; i++) {
+        for (local i = 0 ; i < numberOfDrivers ; i++) {
             remainder = number % 10;
 
             writeDigit(remainder);
