@@ -32,13 +32,13 @@ lookup[9] <- (a | b | c | d | f | g);
 // Number of digits
 const numberOfDigit = 3;
 
-class BigLEDSign {
+class TPIC5C596 {
     dataPin = null;
     clockPin = null;
     latchPin = null;
 
     constructor (latch, clock, data) {
-        server.log("calling BigLEDSign constructor")
+        server.log("calling TPIC5C596 constructor")
         latchPin = latch;
         clockPin = clock;
         dataPin  = data;
