@@ -11,7 +11,21 @@ This class has one main function and a test function.
 
 ## displayNumber(*number,numberOfDrivers*)
 
-displayNumber will send a number to the Digit Drivers dependant on the numberOfDrivers you have added into the train.
+displayNumber will send a number to the Digit Drivers dependant on the numberOfDrivers you have added into the chain.
+
+```squirrel
+    //Hardware Pins related to the Imp004m
+    const numberOfDrivers = 3;
+    largeDigitDriver <- TPIC5C596(hardware.pinE, hardware.pinM, hardware.pinA);
+    agent.on("updateSign", largeDigitDriver.displayNumber.bindenv(digit,numberOfDrivers)); 
+```
+
+## demoCounter(numberOfDrivers)
+
+demoCounter will count up the digits from 0 -> (10^numberOfDrivers). The speed of the counting is also defined by the number of drivers in use.
+
+
+Simply call this function to test
 
 # License
 
